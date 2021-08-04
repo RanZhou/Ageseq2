@@ -29,7 +29,7 @@ You can find Python3 here: https://www.python.org/downloads/. Once python is ins
     python3 -m pip install pandas
  
 In the package, BLAT have been included in the blat_binaries folders, cygwin1.dll will be required if you're running blat in a Windows system. You should be able to find it online with search engine. Once you found it, it has to stay with the other python scripts in the same place or the entry folder.
-##### Possible issues with MAC
+#### Possible issues with MAC
 You might need to manually unlock the blat_macos in your system preference/setting.
 
 ### Usage
