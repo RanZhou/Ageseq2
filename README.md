@@ -6,7 +6,7 @@
       * [Standard installation](#standard-installation)
 
    * [Usage](#usage)
-      * [Simple Usage](#simple usage)
+      * [Simple Usage](#simple-usage)
       * [Inputs](#inputs)
       * [Outputs](#outputs)
    * [Citations](#citations)
