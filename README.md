@@ -42,6 +42,8 @@ A target file and relative path to where reads files are stored are required for
 
     target_file: targets.txt
     reads_path: ./reads
+    
+Finally, you need to make sure the configuration file `AGEseq.conf` is in the same folder along with targets.txt. You should adjust those parameters to achieve a desired result.
 
 #### Simple Usage
 This means that if you have put target sequences in the targets.txt, and reads files in a folder named "reads" in the same folder, you would be able to run Ageseq simply with  the following command:
@@ -53,5 +55,25 @@ Additionally, `-sa` is set to 1 by default to not show alignments in the log fil
 ### Inputs
 #### Target format
 A plain file with two columns, the first column is the name of target sequence, and the second column is the sequence.
+#### Configuration file
+Paramters set by `AGEseq.conf`:
+
+    remove_files      = 1   ;    # keep (0) or delete (1) intermediate files, default = 1
+    READ_SNP_MINR_FREQ          = 0.05	;
+    READ_INDEL_MINR_FREQ        = 0.001 ;
+    READ_SNP_MINIMAL_SUPPORT    = 3 ;
+    READ_INDEL_MINIMAL_SUPPORT  = 3 ;
+    WOBBLE_BASE                 = True ; #Treat wobble base as one allele?
+    WOBBLE_FREQ_LOW	            = 0.35 ; #Minimal frequency to call a wobble base
+    WOBBLE_FREQ_HIGH            = 0.75 ; #Maximum frequency to call a wobble base
+
+    #Below are paramters for BLAT
+
+    blat_tileSize    = 7 ;    
+    blat_oneOff      = 1   ;  
+    blat_maxGap      = 20  ;    
+    blat_minIdentity = 70  ;    
+    blat_minScore    = 20   ; 
+
 
 ### Outputs
