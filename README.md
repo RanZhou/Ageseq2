@@ -69,11 +69,11 @@ Paramters set by `AGEseq.conf`:
 
     #Below are paramters for BLAT
 
-    blat_tileSize    = 7 ;    
+    blat_tileSize    = 7   ;    
     blat_oneOff      = 1   ;  
     blat_maxGap      = 20  ;    
     blat_minIdentity = 70  ;    
-    blat_minScore    = 20   ; 
+    blat_minScore    = 20  ; 
 
 
 ### Outputs
